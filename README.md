@@ -55,6 +55,7 @@ to add positive or negative button and clickListeners use this methods
                     public void onClick(View v) {
                         Toast.makeText(MainActivity.this, "negative button clicked", Toast.LENGTH_SHORT).show();
                     }
-                })```
+                })
+```
 
 i will complete this section later...
