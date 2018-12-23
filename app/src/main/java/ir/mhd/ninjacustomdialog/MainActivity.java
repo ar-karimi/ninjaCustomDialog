@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 })
                 .setPositiveBackground(R.drawable.test)
                 .setNegativeBackground(R.drawable.negative_background)
+                .setCancellable(true)
                 .build();
 
         dialog.show(getSupportFragmentManager(), null);
