@@ -204,7 +204,6 @@ public class NinjaAlertDialog extends DialogFragment {
             }
         });
 
-
     }
 
     private void setupViews() {
@@ -216,30 +215,6 @@ public class NinjaAlertDialog extends DialogFragment {
         negativeButton = rootView.findViewById(R.id.btn_negative);
         frameLayout = rootView.findViewById(R.id.frame_container);
 
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setSubtitle(String subtitle) {
-        this.subtitle = subtitle;
-    }
-
-    void setTitleTextColor(int titleTextColor) {
-        this.titleTextColor = titleTextColor;
-    }
-
-    void setSubtitleTextColor(int subtitleTextColor) {
-        this.subtitleTextColor = subtitleTextColor;
-    }
-
-    void setPositiveTextColor(int positiveTextColor) {
-        this.positiveTextColor = positiveTextColor;
-    }
-
-    void setNegativeTextColor(int negativeTextColor) {
-        this.negativeTextColor = negativeTextColor;
     }
 
     void setViews(View views) {
