@@ -6,7 +6,7 @@ clone this project and add ninjaAlertDialog module to your application
 
 ## Usage
 ### Basic dialog
-A basic dialog will show the provided title (optional) and description, using your primary color as the header background. You have access to methods such as ```setTitle()```,```setContent()```,```setIcon()```,```setCancelable()```, ```dismiss()``` , etc. Customizations are explained below.
+A basic dialog will show the provided title (optional) and description, using your primary color as the header background. You have access to methods such as ```setTitle()```,```setSubTitle()```,```setIcon()```,```setCancelable()```, ```dismiss()``` , etc. Customizations are explained below.
 
 ```java
 NinjaAlertDialog dialog = new NinjaAlertDialog.Builder()
@@ -21,14 +21,14 @@ to show dialog you have to use this code
 ```java
 dialog.show(getSupportFragmentManager(), null);
 ```
-this method give a fragmentManager or FragmentTransaction and a tag (tag can be null)
+this method need a fragmentManager or FragmentTransaction and a tag (tag can be null)
 
 ## You want more customization?
 #### use this methods in builder
 you can change text colors using set...TextColor() like example below:
 
 ```java
-.setTitleTextColor(getResources().getColor(R.color.orange600))
+.setTitleTextColor(R.color.orange600)
 ```
 
 you can set background for every view in this dialog
