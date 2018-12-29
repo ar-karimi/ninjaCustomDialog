@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         NinjaAlertDialog dialog = new NinjaAlertDialog.Builder()
                 .setTitle("test title")
                 .setSubtitle("test subtitle")
-                .setTitleTextColor(getResources().getColor(R.color.orange600))
-                .setSubtitleTextColor(getResources().getColor(R.color.orange600))
+                .setTitleTextColor(R.color.orange600)
+                .setSubtitleTextColor(R.color.orange600)
                 .setPositiveText("positive text")
                 .setPositiveButtonClickListener(new OnClickListener.OnPositiveButtonClickListener() {
                     @Override

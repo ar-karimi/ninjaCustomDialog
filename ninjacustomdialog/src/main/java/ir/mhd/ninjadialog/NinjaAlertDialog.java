@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.support.annotation.ColorInt;
+import android.support.annotation.ColorRes;
 import android.support.annotation.DimenRes;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
@@ -45,13 +46,13 @@ public class NinjaAlertDialog extends DialogFragment {
     private String positiveText;
     private String negativeText;
 
-    @ColorInt
+    @ColorRes
     private int titleTextColor;
-    @ColorInt
+    @ColorRes
     private int subtitleTextColor;
-    @ColorInt
+    @ColorRes
     private int positiveTextColor;
-    @ColorInt
+    @ColorRes
     private int negativeTextColor;
 
     @DrawableRes
@@ -236,22 +237,22 @@ public class NinjaAlertDialog extends DialogFragment {
         private String positiveText;
         private String negativeText;
 
-        @ColorInt
+        @ColorRes
         private int titleTextColor;
-        @ColorInt
+        @ColorRes
         private int subtitleTextColor;
-        @ColorInt
+        @ColorRes
         private int positiveTextColor;
-        @ColorInt
+        @ColorRes
         private int negativeTextColor;
 
-        @DimenRes
+        @DrawableRes
         private int rootBackground;
-        @DimenRes
+        @DrawableRes
         private int image;
-        @DimenRes
+        @DrawableRes
         private int positiveBackground;
-        @DimenRes
+        @DrawableRes
         private int negativeBackground;
 
         private View views;
@@ -354,7 +355,7 @@ public class NinjaAlertDialog extends DialogFragment {
             return titleTextColor;
         }
 
-        public Builder setTitleTextColor(@ColorInt int titleTextColor) {
+        public Builder setTitleTextColor(@ColorRes int titleTextColor) {
             this.titleTextColor = titleTextColor;
             return this;
         }
@@ -363,7 +364,7 @@ public class NinjaAlertDialog extends DialogFragment {
             return subtitleTextColor;
         }
 
-        public Builder setSubtitleTextColor(@ColorInt int subtitleTextColor) {
+        public Builder setSubtitleTextColor(@ColorRes int subtitleTextColor) {
             this.subtitleTextColor = subtitleTextColor;
             return this;
         }
@@ -372,7 +373,7 @@ public class NinjaAlertDialog extends DialogFragment {
             return positiveTextColor;
         }
 
-        public Builder setPositiveTextColor(@ColorInt int positiveTextColor) {
+        public Builder setPositiveTextColor(@ColorRes int positiveTextColor) {
             this.positiveTextColor = positiveTextColor;
             return this;
         }
@@ -381,7 +382,7 @@ public class NinjaAlertDialog extends DialogFragment {
             return negativeTextColor;
         }
 
-        public Builder setNegativeTextColor(@ColorInt int negativeTextColor) {
+        public Builder setNegativeTextColor(@ColorRes int negativeTextColor) {
             this.negativeTextColor = negativeTextColor;
             return this;
         }
